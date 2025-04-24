@@ -143,7 +143,7 @@ export function AnimatedTestimonials({
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 style={{ zIndex: activeIndex === index ? 10 : 0 }}
               >
-                <div className="bg-card border shadow-lg rounded-xl p-6 sm:p-8 h-full flex flex-col justify-between">
+                <div className="bg-black text-white border shadow-lg rounded-xl p-6 sm:p-8 h-full flex flex-col justify-between">
                   <div className="flex justify-between items-start mb-4">
                     <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 rotate-180" />
                     <div className="flex gap-1 sm:gap-2">
