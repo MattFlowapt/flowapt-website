@@ -27,7 +27,7 @@ function Hero() {
         <div className="flex gap-5 py-12 items-center justify-center flex-col">
           <div>
             <Button variant="secondary" size="sm" className="gap-4">
-              Why work with us? <MoveRight className="w-4 h-4" />
+              Read our Substack <MoveRight className="w-4 h-4" />
             </Button>
           </div>
           <div className="flex gap-4 flex-col">
@@ -60,14 +60,12 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Transform your Shopify store with our AI-powered WhatsApp agents. They'll answer customer questions, 
-              recommend products, and handle sales – all through messaging. Boost conversions and 
-              provide 24/7 personalised support without lifting a finger.
+              Drive conversions and provide 24/7 personalised support without lifting a finger.
             </p>
           </div>
           <div className="flex flex-row gap-3">
             <Button size="lg" className="gap-4" variant="outline">
-              Schedule a demo <PhoneCall className="w-4 h-4" />
+              View free demo <PhoneCall className="w-4 h-4" />
             </Button>
             <Button size="lg" className="gap-4">
               Connect your store <ShoppingBag className="w-4 h-4" />

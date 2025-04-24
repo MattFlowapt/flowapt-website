@@ -177,19 +177,19 @@ export function Connect() {
                   </div>
 
                   <div className="-mt-20 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-10 md:w-[400px]">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-start">
                       <h3 className="mt-6 pb-1 font-bold ">
                         <span className="text-2xl md:text-4xl">
-                          Any questions about flowapt?
+                          Any questions?
                         </span>
                       </h3>
                     </div>
                     <p className="mb-4 text-slate-400">
-                      Feel free to reach out to us!
+                      We'll get back to you (always same day)
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Link href={"#"} target="_blank">
-                        <Button className="border border-white" variant="outline">Book a call</Button>
+                        <Button className="bg-white text-black hover:bg-white/90 border-none" variant="outline">Book a call</Button>
                       </Link>
                       <Link
                         href="mailto:info@flowapt.com"
