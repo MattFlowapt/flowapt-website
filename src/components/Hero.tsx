@@ -22,7 +22,7 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full pt-20">
+    <div className="w-full">
       <div className="container mx-auto">
         <div className="flex gap-5 py-12 items-center justify-center flex-col">
           <div className="flex flex-col items-center justify-center gap-2 mb-4">
