@@ -107,7 +107,7 @@ export function Connect() {
   }, [animate]);
   
   return (
-    <section id="features" className="relative mx-auto mb-20 mt-6 max-w-5xl">
+    <section id="features" className="relative mx-auto py-20 max-w-5xl">
       <HighlightGroup className="group h-full">
         <div
           className="group/item h-full md:col-span-6 lg:col-span-12"
