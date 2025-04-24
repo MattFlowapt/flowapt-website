@@ -22,15 +22,9 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full">
+    <div className="w-full pt-20">
       <div className="container mx-auto">
         <div className="flex gap-5 py-12 items-center justify-center flex-col">
-          <div className="flex flex-col items-center justify-center gap-2 mb-4">
-            <h2 className="font-all-round-gothic text-4xl md:text-5xl font-extrabold tracking-tight" style={{ fontWeight: 900 }}>
-              flowapt
-            </h2>
-          </div>
-
           <div>
             <Button variant="secondary" size="sm" className="gap-4">
               Why work with us? <MoveRight className="w-4 h-4" />
