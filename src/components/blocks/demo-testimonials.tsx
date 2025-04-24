@@ -27,7 +27,7 @@ export function AnimatedTestimonialsBasic() {
           content:
             "This is the coolest chat bot everrrrr, can you teach me \"I am that girl\" in italian 🤔",
           rating: 5,
-          avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+          avatar: "/ido.png",
         },
         {
           id: 3,
