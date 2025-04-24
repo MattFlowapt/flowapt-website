@@ -6,7 +6,7 @@ import { AnimatedTestimonialsBasic } from './components/blocks/demo-testimonials
 
 function App() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
       <AnimatedTestimonialsBasic />

@@ -107,7 +107,7 @@ export function Connect() {
   }, [animate]);
   
   return (
-    <section id="features" className="relative mx-auto py-20 max-w-5xl">
+    <section id="features" className="relative mx-auto py-20 max-w-5xl px-4 sm:px-6">
       <HighlightGroup className="group h-full">
         <div
           className="group/item h-full md:col-span-6 lg:col-span-12"
@@ -122,7 +122,7 @@ export function Connect() {
                 vy={-0.2}
               />
               <div className="flex justify-center">
-                <div className="flex h-full flex-col justify-center gap-10 p-4 md:h-[300px] md:flex-row">
+                <div className="flex h-full flex-col justify-center gap-6 p-4 md:gap-10 md:h-[300px] md:flex-row">
                   <div
                     className="relative mx-auto h-[270px] w-[300px] md:h-[270px] md:w-[300px]"
                     ref={scope}

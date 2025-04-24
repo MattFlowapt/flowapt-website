@@ -63,11 +63,11 @@ function Hero() {
               Drive conversions and provide 24/7 personalised support without lifting a finger.
             </p>
           </div>
-          <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4" variant="outline">
+          <div className="flex flex-col md:flex-row gap-3 w-full items-center max-w-sm">
+            <Button size="lg" className="gap-4 w-full" variant="outline">
               View free demo <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button size="lg" className="gap-4 bg-white text-black hover:bg-white/90" variant="outline">
+            <Button size="lg" className="gap-4 w-full bg-white text-black hover:bg-white/90" variant="outline">
               Connect your store <ShoppingBag className="w-4 h-4" />
             </Button>
           </div>
