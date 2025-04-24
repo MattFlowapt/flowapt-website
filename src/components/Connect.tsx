@@ -6,7 +6,7 @@ import { useAnimate } from "framer-motion";
 
 import { Button, buttonVariants } from "./ui/button";
 import { HighlighterItem, HighlightGroup, Particles } from "./ui/highlighter";
-import { InquiryForm } from "./InquiryForm";
+import { InquiryForm } from "./inquiry-form";
 
 // Mock for DIcons since we don't have access to that exact package
 const DIcons = {

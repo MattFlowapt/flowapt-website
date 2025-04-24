@@ -17,7 +17,7 @@ export function AnimatedTestimonialsBasic() {
           content:
             "The WhatsApp shopping experience was incredible! I could ask questions about oils and get personalized recommendations instantly.",
           rating: 5,
-          avatar: "/africanoilslogo.png",
+          avatar: "/logos/africanoilslogo.png",
         },
         {
           id: 2,
@@ -27,7 +27,7 @@ export function AnimatedTestimonialsBasic() {
           content:
             "This is the coolest chat bot everrrrr, can you teach me \"I am that girl\" in italian 🤔",
           rating: 5,
-          avatar: "/ido.png",
+          avatar: "/logos/ido.png",
         },
         {
           id: 3,
@@ -37,7 +37,7 @@ export function AnimatedTestimonialsBasic() {
           content:
             "24/7 support through WhatsApp is a game-changer. Quick answers even at 10pm - this is exactly what retail needs!",
           rating: 5,
-          avatar: "/caughtonlinelogo.png",
+          avatar: "/logos/caughtonlinelogo.png",
         },
       ]}
     />
