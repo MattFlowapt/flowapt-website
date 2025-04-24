@@ -82,7 +82,7 @@ export function InquiryForm({
           {triggerText}
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] p-5 sm:p-6">
+      <DialogContent className="sm:max-w-[425px] px-5 sm:px-6">
         <DialogHeader>
           <DialogTitle>Get in touch with us</DialogTitle>
           <DialogDescription>

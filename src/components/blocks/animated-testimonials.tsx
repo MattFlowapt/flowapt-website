@@ -182,8 +182,8 @@ export function AnimatedTestimonials({
             ))}
 
             {/* Decorative elements */}
-            <div className="absolute -bottom-4 left-2 sm:-bottom-6 sm:-left-6 h-16 w-16 sm:h-24 sm:w-24 rounded-xl bg-gray-400/10 -z-10"></div>
-            <div className="absolute -top-4 right-2 sm:-top-6 sm:-right-6 h-16 w-16 sm:h-24 sm:w-24 rounded-xl bg-gray-400/10 -z-10"></div>
+            <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-xl bg-gray-400/10 -z-10"></div>
+            <div className="absolute -top-6 -right-6 h-24 w-24 rounded-xl bg-gray-400/10 -z-10"></div>
           </motion.div>
         </motion.div>
       </div>
