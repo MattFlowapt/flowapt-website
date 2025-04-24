@@ -143,37 +143,39 @@ export function AnimatedTestimonials({
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 style={{ zIndex: activeIndex === index ? 10 : 0 }}
               >
-                <div className="bg-black text-white border shadow-lg rounded-xl p-6 sm:p-8 h-full flex flex-col justify-between">
-                  <div className="flex justify-between items-start mb-4">
-                    <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 rotate-180" />
-                    <div className="flex gap-1 sm:gap-2">
-                      {Array(testimonial.rating)
-                        .fill(0)
-                        .map((_, i) => (
-                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-500 text-yellow-500" />
-                        ))}
-                    </div>
-                  </div>
-
-                  <div className="mb-4 flex-1">
-                    <p className="text-base sm:text-lg font-medium leading-relaxed">"{testimonial.content}"</p>
-                  </div>
-
-                  <div>
-                    <div className="flex justify-center">
-                      <Separator className="my-3 sm:my-4 bg-white w-3/4" />
+                <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#94609a] to-[#ee3a5b] shadow-lg">
+                  <div className="bg-black text-white rounded-[10px] p-6 sm:p-8 h-full flex flex-col justify-between">
+                    <div className="flex justify-between items-start mb-4">
+                      <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 rotate-180" />
+                      <div className="flex gap-1 sm:gap-2">
+                        {Array(testimonial.rating)
+                          .fill(0)
+                          .map((_, i) => (
+                            <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-500 text-yellow-500" />
+                          ))}
+                      </div>
                     </div>
 
-                    <div className="flex items-center gap-3 sm:gap-4">
-                      <Avatar className="h-10 w-10 sm:h-12 sm:w-12 border">
-                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <h3 className="font-semibold text-sm sm:text-base">{testimonial.name}</h3>
-                        <p className="text-xs sm:text-sm text-muted-foreground">
-                          {testimonial.role}, {testimonial.company}
-                        </p>
+                    <div className="mb-4 flex-1">
+                      <p className="text-base sm:text-lg font-medium leading-relaxed">"{testimonial.content}"</p>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-center">
+                        <Separator className="my-3 sm:my-4 bg-white w-3/4" />
+                      </div>
+
+                      <div className="flex items-center gap-3 sm:gap-4">
+                        <Avatar className="h-10 w-10 sm:h-12 sm:w-12 border">
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <h3 className="font-semibold text-sm sm:text-base">{testimonial.name}</h3>
+                          <p className="text-xs sm:text-sm text-muted-foreground">
+                            {testimonial.role}, {testimonial.company}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
