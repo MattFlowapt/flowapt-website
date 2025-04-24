@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["💬 conversational", "🤖 automated", "🧠 intelligent", "👋 personalised", "🔄 seamless"],
+    () => ["💬 conversational", "🤖 automated", "🧠 intelligent", "👋 personalised", "🔄 seamless", "🧬 agentic"],
     []
   );
 
@@ -27,13 +27,13 @@ function Hero() {
         <div className="flex gap-5 py-12 items-center justify-center flex-col">
           <div>
             <Button variant="secondary" size="sm" className="gap-4">
-              Read our Substack <MoveRight className="w-4 h-4" />
+              Why WhatsApp Commerce? <MoveRight className="w-4 h-4" />
             </Button>
           </div>
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
               <span className="bg-gradient-to-r from-[#94609a] to-[#ee3a5b] text-transparent bg-clip-text">WhatsApp Commerce</span>
-              <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
+              <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-3 pt-2">
                 &nbsp;
                 {titles.map((title, index) => (
                   <motion.span
@@ -67,7 +67,7 @@ function Hero() {
             <Button size="lg" className="gap-4" variant="outline">
               View free demo <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button size="lg" className="gap-4">
+            <Button size="lg" className="gap-4 bg-white text-black hover:bg-white/90" variant="outline">
               Connect your store <ShoppingBag className="w-4 h-4" />
             </Button>
           </div>

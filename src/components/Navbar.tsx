@@ -9,14 +9,17 @@ export function Navbar() {
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#" className="text-sm hover:text-spektr-cyan-50 transition-colors">Home</a>
-          <a href="#" className="text-sm hover:text-spektr-cyan-50 transition-colors">Features</a>
+          <a href="#testimonials" className="text-sm hover:text-spektr-cyan-50 transition-colors">Testimonials</a>
+          <a href="#features" className="text-sm hover:text-spektr-cyan-50 transition-colors">Features</a>
           <a href="#" className="text-sm hover:text-spektr-cyan-50 transition-colors">Pricing</a>
           <a href="#" className="text-sm hover:text-spektr-cyan-50 transition-colors">About</a>
         </nav>
         <div className="ml-auto">
-          <button className="bg-gradient-to-r from-[#94609a] to-[#ee3a5b] text-white px-4 py-1.5 rounded-full text-sm font-medium shadow-md hover:opacity-90 transition-opacity">
-            Sign In
-          </button>
+          <a href="https://flowapt.live" target="_blank" rel="noopener noreferrer">
+            <button className="bg-gradient-to-r from-[#94609a] to-[#ee3a5b] text-white px-4 py-1.5 rounded-full text-sm font-medium shadow-md hover:opacity-90 transition-opacity">
+              Client Portal
+            </button>
+          </a>
         </div>
       </div>
     </div>
