@@ -189,7 +189,7 @@ export function Connect() {
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Link href={"#"} target="_blank">
-                        <Button className="bg-white text-black hover:bg-white/90 border-none" variant="outline">Book a call</Button>
+                        <Button className="bg-white text-black hover:bg-white/90 border-none" variant="outline">Get in touch</Button>
                       </Link>
                       <Link
                         href="mailto:info@flowapt.com"
