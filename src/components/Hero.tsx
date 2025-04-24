@@ -26,9 +26,11 @@ function Hero() {
       <div className="container mx-auto">
         <div className="flex gap-5 py-12 items-center justify-center flex-col">
           <div>
-            <Button variant="secondary" size="sm" className="gap-4">
-              Why WhatsApp Commerce? <MoveRight className="w-4 h-4" />
-            </Button>
+            <a href="#features">
+              <Button variant="secondary" size="sm" className="gap-4">
+                Why WhatsApp Commerce? <MoveRight className="w-4 h-4" />
+              </Button>
+            </a>
           </div>
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">

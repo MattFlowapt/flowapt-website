@@ -3,6 +3,7 @@
 import * as React from "react";
 import { cn } from "../lib/utils";
 import { useAnimate } from "framer-motion";
+import { useState } from "react";
 
 import { Button, buttonVariants } from "./ui/button";
 import { HighlighterItem, HighlightGroup, Particles } from "./ui/highlighter";
@@ -67,6 +68,8 @@ const Link = ({ href, className, children, target }: { href: string; className?:
 
 export function Connect() {
   const [scope, animate] = useAnimate();
+  const formRef = React.useRef<any>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   React.useEffect(() => {
     animate(
@@ -107,8 +110,19 @@ export function Connect() {
     );
   }, [animate]);
   
+  const handleSendMessage = async () => {
+    if (formRef.current && formRef.current.handleSubmit) {
+      setIsSubmitting(true);
+      try {
+        await formRef.current.handleSubmit();
+      } finally {
+        setIsSubmitting(false);
+      }
+    }
+  };
+
   return (
-    <section id="features" className="relative mx-auto py-20 max-w-5xl px-4 sm:px-6">
+    <section className="relative mx-auto py-20 max-w-5xl px-4 sm:px-6">
       <HighlightGroup className="group h-full">
         <div
           className="group/item h-full md:col-span-6 lg:col-span-12"
@@ -188,39 +202,54 @@ export function Connect() {
                     <p className="mb-4 text-slate-400">
                       We'll get back to you (always same day)
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      <InquiryForm webhookUrl="https://hook.eu1.make.com/your-webhook-id-here" />
-                      <Link
-                        href="mailto:info@flowapt.com"
-                        target="_blank"
-                        className={cn(
-                          buttonVariants({
-                            variant: "outline",
-                            size: "icon",
-                          }),
-                        )}
-                      >
-                        <span className="flex items-center gap-1">
-                          <DIcons.Mail strokeWidth={1} className="h-5 w-5" />
-                        </span>
-                      </Link>
-                      <Link
-                        href="https://wa.me/1234567890"
-                        target="_blank"
-                        className={cn(
-                          buttonVariants({
-                            variant: "outline",
-                            size: "icon",
-                          }),
-                        )}
-                      >
-                        <span className="flex items-center gap-1">
-                          <DIcons.WhatsApp
-                            strokeWidth={1}
-                            className="h-4 w-4"
-                          />
-                        </span>
-                      </Link>
+                    <div className="flex flex-col gap-2">
+                      <InquiryForm 
+                        ref={formRef}
+                        webhookUrl="https://hook.eu1.make.com/your-webhook-id-here" 
+                      />
+                      <div className="flex items-center justify-between gap-2">
+                        <Button 
+                          onClick={handleSendMessage} 
+                          className="bg-white text-black hover:bg-white/90 flex-1"
+                          variant="outline"
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting ? "Sending..." : "Send Message"}
+                        </Button>
+                        <div className="flex gap-2">
+                          <Link
+                            href="mailto:info@flowapt.com"
+                            target="_blank"
+                            className={cn(
+                              buttonVariants({
+                                variant: "outline",
+                                size: "icon",
+                              }),
+                            )}
+                          >
+                            <span className="flex items-center gap-1">
+                              <DIcons.Mail strokeWidth={1} className="h-5 w-5" />
+                            </span>
+                          </Link>
+                          <Link
+                            href="https://wa.me/1234567890"
+                            target="_blank"
+                            className={cn(
+                              buttonVariants({
+                                variant: "outline",
+                                size: "icon",
+                              }),
+                            )}
+                          >
+                            <span className="flex items-center gap-1">
+                              <DIcons.WhatsApp
+                                strokeWidth={1}
+                                className="h-4 w-4"
+                              />
+                            </span>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
