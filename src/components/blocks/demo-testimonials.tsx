@@ -15,7 +15,7 @@ export function AnimatedTestimonialsBasic() {
           role: "Customer",
           company: "African Oils & Vinegar",
           content:
-            "The WhatsApp shopping experience was incredible. I could ask questions about different oils and get personalized recommendations instantly. It felt like having a personal shopper in my pocket!",
+            "The WhatsApp shopping experience was incredible! I could ask questions about oils and get personalized recommendations instantly.",
           rating: 5,
           avatar: "/africanoilslogo.png",
         },
@@ -35,7 +35,7 @@ export function AnimatedTestimonialsBasic() {
           role: "Customer",
           company: "Caught Online",
           content:
-            "The 24/7 support through WhatsApp is a game-changer. I had questions about my order at 10pm and got an immediate, helpful response. This conversational shopping experience is exactly what retail needs.",
+            "24/7 support through WhatsApp is a game-changer. Quick answers even at 10pm - this is exactly what retail needs!",
           rating: 5,
           avatar: "/caughtonlinelogo.png",
         },

@@ -91,7 +91,7 @@ export function AnimatedTestimonials({
   }
 
   return (
-    <section ref={sectionRef} id="testimonials" className={`py-20 pt-24 pb-16 md:pb-20 overflow-hidden bg-muted/30 ${className || ""}`}>
+    <section ref={sectionRef} id="testimonials" className={`py-20 pt-24 pb-20 overflow-hidden bg-muted/30 ${className || ""}`}>
       <div className="container mx-auto max-w-5xl px-4 sm:px-8">
         <motion.div
           initial="hidden"
@@ -129,7 +129,7 @@ export function AnimatedTestimonials({
           </motion.div>
 
           {/* Right side: Testimonial cards */}
-          <motion.div variants={itemVariants} className="relative h-full min-h-[300px] md:min-h-[400px]">
+          <motion.div variants={itemVariants} className="relative h-full min-h-[350px] md:min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}
@@ -143,36 +143,38 @@ export function AnimatedTestimonials({
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 style={{ zIndex: activeIndex === index ? 10 : 0 }}
               >
-                <div className="bg-card border shadow-lg rounded-xl p-8 h-full flex flex-col">
-                  <div className="flex justify-between items-start mb-6">
-                    <Quote className="h-8 w-8 text-primary/20 rotate-180" />
-                    <div className="flex gap-2">
+                <div className="bg-card border shadow-lg rounded-xl p-6 sm:p-8 h-full flex flex-col justify-between">
+                  <div className="flex justify-between items-start mb-4">
+                    <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 rotate-180" />
+                    <div className="flex gap-1 sm:gap-2">
                       {Array(testimonial.rating)
                         .fill(0)
                         .map((_, i) => (
-                          <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-500 text-yellow-500" />
                         ))}
                     </div>
                   </div>
 
-                  <div className="mb-6 flex-1">
-                    <p className="text-lg font-medium leading-relaxed">"{testimonial.content}"</p>
+                  <div className="mb-4 flex-1">
+                    <p className="text-base sm:text-lg font-medium leading-relaxed">"{testimonial.content}"</p>
                   </div>
 
-                  <div className="flex justify-center">
-                    <Separator className="my-4 bg-white w-3/4" />
-                  </div>
+                  <div>
+                    <div className="flex justify-center">
+                      <Separator className="my-3 sm:my-4 bg-white w-3/4" />
+                    </div>
 
-                  <div className="flex items-center gap-4">
-                    <Avatar className="h-12 w-12 border">
-                      <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                      <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h3 className="font-semibold">{testimonial.name}</h3>
-                      <p className="text-sm text-muted-foreground">
-                        {testimonial.role}, {testimonial.company}
-                      </p>
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <Avatar className="h-10 w-10 sm:h-12 sm:w-12 border">
+                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <h3 className="font-semibold text-sm sm:text-base">{testimonial.name}</h3>
+                        <p className="text-xs sm:text-sm text-muted-foreground">
+                          {testimonial.role}, {testimonial.company}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
