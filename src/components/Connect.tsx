@@ -6,6 +6,7 @@ import { useAnimate } from "framer-motion";
 
 import { Button, buttonVariants } from "./ui/button";
 import { HighlighterItem, HighlightGroup, Particles } from "./ui/highlighter";
+import { InquiryForm } from "./InquiryForm";
 
 // Mock for DIcons since we don't have access to that exact package
 const DIcons = {
@@ -188,9 +189,7 @@ export function Connect() {
                       We'll get back to you (always same day)
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Link href={"#"} target="_blank">
-                        <Button className="bg-white text-black hover:bg-white/90 border-none" variant="outline">Get in touch</Button>
-                      </Link>
+                      <InquiryForm webhookUrl="https://hook.eu1.make.com/your-webhook-id-here" />
                       <Link
                         href="mailto:info@flowapt.com"
                         target="_blank"
