@@ -103,8 +103,8 @@ export function AnimatedTestimonials({
           <motion.div variants={itemVariants} className="flex flex-col justify-center">
             <div className="space-y-6">
               {badgeText && (
-                <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-700">
-                  <Star className="mr-1 h-3.5 w-3.5 fill-gray-700" />
+                <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-black">
+                  <Star className="mr-1 h-3.5 w-3.5 fill-black" />
                   <span>{badgeText}</span>
                 </div>
               )}
@@ -160,8 +160,8 @@ export function AnimatedTestimonials({
                   </div>
 
                   <div>
-                    <div className="flex justify-center">
-                      <Separator className="my-3 sm:my-4 bg-white w-3/4" />
+                    <div className="flex">
+                      <Separator className="my-3 sm:my-4 bg-white w-full" />
                     </div>
 
                     <div className="flex items-center gap-3 sm:gap-4">
